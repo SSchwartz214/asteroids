@@ -1,0 +1,13 @@
+<div class="title">
+  <h1>Most Dangerous Day</h1>
+  <p>September 8, 2018 - September 14, 2018</p>
+</div>
+<div class="most_dangerous_day">
+  <p>September 11, 2018 has 2 potentially dangerous near earth objects</p>
+  <% @presenter.asteroids.each do |asteroid| %>
+    <ul class="asteroid">
+      <li class="name">Name: <%= asteroid.name %></li>
+      <li class="id">NEO Reference ID: <%= asteroid.id %></li>
+    </ul>
+    <% end %>
+</div>
